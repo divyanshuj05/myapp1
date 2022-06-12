@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reportWebVitals from './reportWebVitals';
 import './index.css';
-import Hello from './Hello';
-//import registerServiceWorker from './registerServiceWorker';
+import 'tachyons'
+import App from './js/App';
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
-//registerServiceWorker();
+
+const container=document.getElementById('root')
+const root = ReactDOM.createRoot(container);
+
+
+root.render(<App />)
+
+reportWebVitals();
